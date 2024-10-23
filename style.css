@@ -1,0 +1,195 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.cabecalho {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.cabecalho .titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  transition: padding 0.3s ease;
+}
+
+.cabecalho .titulo .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 20px;
+  transition: font-size 0.3s ease;
+}
+
+.cabecalho .titulo .logo i {
+  font-size: 30px;
+  line-height: 1;
+  margin-right: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.cabecalho .titulo h1 {
+  font-size: 30px;
+  line-height: 20px;
+  transition: color 0.3s ease;
+}
+
+.cabecalho .titulo button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cabecalho form {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.cabecalho form input {
+  font-size: 20px;
+  padding: 5px;
+  background-color: #eee;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.cabecalho form button {
+  font-size: 20px;
+  padding: 5px;
+  background-color: #4caf50;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.exibirTarefa {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 30px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.divisor-cabecalho {
+  width: 98%;
+  margin: 10px auto;
+  transition: background-color 0.3s ease;
+}
+
+.divisor-vertical {
+  position: absolute; 
+  left: 50%; 
+  top: 0; 
+  height: calc(100vh - 100px);
+  width: 2px;
+  background-color: #ccc;
+  transform: translateX(-50%);
+  z-index: 1;
+  transition: height 0.3s ease;
+}
+
+.tarefas {
+  position: relative; 
+  transition: margin 0.3s ease;
+}
+
+.tarefas {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.tarefas__coluna {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 45%;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarefas__coluna h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.tarefas__coluna li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+  font-size: 18px;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+.tarefas__coluna li .checkbox-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.tarefas__coluna li .titulo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.tarefas__coluna li .concluirTarefa {
+  font-size: 24px;
+  cursor: pointer; 
+  transition: background-color 0.3s ease, border-radius 0.3s ease;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.tarefas__coluna li .concluirTarefa:hover {
+  background-color: #f0f0f0;
+}
+
+.tarefas__coluna li:hover {
+  transform: scale(1.05);
+  background-color: #f0f0f0;
+}
+
+.tarefas__coluna li:hover .titulo {
+  transition: font-weight 0.3s ease;
+  font-weight: bold;
+}

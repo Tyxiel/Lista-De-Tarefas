@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script defer src="./script.js"></script>
+  </head>
+  <body class="pagina">
+    <header class="cabecalho">
+      <header class="titulo">
+        <header class="logo">
+          <i class="bx bx-task"></i>
+          <h1>Lista de Tarefas</h1>
+        </header>
+        <button
+          type="button"
+          class="exibirTarefa"
+          onclick="exibirAdicionarTarefa()"
+        >
+          +
+        </button>
+      </header>
+      <form name="formPrincipal" class="formPrincipal">
+        <input
+          class="inputTarefa"
+          type="text"
+          name="inputTarefa"
+          id="inputTarefa"
+          placeholder="Anotar tarefas de amanhã...."
+        />
+        <button type="button" onclick="adicionarTarefa()">Adicionar</button>
+      </form>
+    </header>
+    <hr class="divisor-cabecalho">
+    <main class="tarefas">
+      <section class="tarefas__coluna">
+        <h2>Para Fazer</h2>
+        <ul id="lista-para-fazer"></ul>
+      </section>
+      <div class="divisor-vertical"></div>
+      <section class="tarefas__coluna">
+        <h2>Concluído</h2>
+        <ul id="lista-concluido"></ul>
+      </section>
+    </main>
+  </body>
+</html>
