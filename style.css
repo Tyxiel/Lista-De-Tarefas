@@ -65,6 +65,7 @@ body {
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: opacity 0.3s ease, transform 0.3s ease;
+  gap: 10px;
 }
 
 .cabecalho form input {
