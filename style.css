@@ -58,6 +58,7 @@ body {
 .cabecalho form {
   display: none;
   position: fixed;
+  z-indez: 100;
   bottom: 90px;
   right: 20px;
   background: white;
