@@ -24,7 +24,7 @@ Este projeto é uma Lista de Tarefas (To-Do List) desenvolvida com tecnologias w
 
 ## Como Usar/Testar
 
-1.  Clone este repositório: `git clone https://github.com/seu-usuario/nome-do-repositorio.git`
+1.  Clone este repositório: `git clone https://github.com/Tyxiel/Lista-De-Tarefas.git`
 2.  Navegue até o diretório do projeto.
 3.  Abra o arquivo `index.html` no seu navegador de preferência.
 
