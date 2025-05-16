@@ -35,3 +35,7 @@ Ou acesse a demonstração online: [Lista de Tarefas](http://tyxiel.github.io/Li
 * Manipulação avançada do DOM com JavaScript.
 * Gerenciamento de eventos.
 * Criação de componentes dinâmicos na interface.
+
+## Licença
+
+Este projeto é licenciado sob a **GNU Affero General Public License v3.0**.
